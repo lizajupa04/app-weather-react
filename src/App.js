@@ -7,8 +7,8 @@ function App() {
 
       <div className="container">
         <div className="row">
-          <div className="col-6">Hello</div>
-          <div className="col-6">Hello</div>
+          <div className="col-8 columna">Hello</div>
+          <div className="col-4">Hello</div>
         </div>
       </div>
     </div>
