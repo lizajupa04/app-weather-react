@@ -1,4 +1,131 @@
-.container,
-.columna {
-  border-radius: 1px solid gray;
+body {
+  font-family: "Maven Pro", sans-serif;
+  background: rgba(252, 231, 193, 0.582);
+}
+
+.section-City {
+  margin-top: 10px;
+}
+
+.section-Temp {
+  margin-top: 20px;
+  border: 1px solid gray;
+}
+
+/* ____________SECTION SEARCH__________________________ */
+/*_____________________________________________________*/
+
+.App-contenedor {
+  background: rgb(183, 210, 236) 90.2%;
+  width: 680px;
+  height: 440px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-left: 320px;
+  display: block;
+  border: 1px white solid;
+  box-shadow: 10px 10px 10px rgba(121, 121, 121, 0.281);
+}
+
+.inputsearch {
+  background: rgba(207, 207, 207, 0.233);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px 0px 0px 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.521);
+  border-left: 2px solid rgba(255, 255, 255, 0.521);
+  border-right: none;
+  border-bottom: none;
+  padding: 8px;
+  box-shadow: 1px 3px 3px rgba(110, 110, 110, 0.219);
+  outline: none;
+}
+
+.inputbutton {
+  background: rgba(207, 207, 207, 0.233);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0px 10px 10px 0px;
+  border-top: 2px solid rgba(255, 255, 255, 0.521);
+  border-left: 2px solid rgba(255, 255, 255, 0.521);
+  border-right: none;
+  border-bottom: none;
+  padding: 8px;
+  margin-left: 5px;
+  box-shadow: 1px 3px 1px rgba(124, 124, 124, 0.267);
+  outline: none;
+}
+
+.inputbutton:hover {
+  background: rgba(255, 255, 255, 0.233);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.div1 {
+  margin-left: 20px;
+}
+
+.columna1 {
+  border: 1px solid gray;
+}
+
+/* ____________SECTION CITY____________________________ */
+/*_____________________________________________________*/
+.tit-city {
+  background: none;
+  color: rgb(66, 66, 66);
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: none;
+  display: flex;
+  align-items: start;
+  border: none;
+}
+.clima2,
+.clima3 {
+  font-size: 12px;
+  font-weight: lighter;
+  margin-top: -5px;
+}
+
+.humity1,
+.humity2 {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.humity2 {
+  margin-top: -5px;
+}
+
+/* ____________SECTION TEMP____________________________ */
+/*_____________________________________________________*/
+
+.numero-temp {
+  background: none;
+  color: rgb(66, 66, 66);
+  font-size: 120px;
+  font-weight: bold;
+
+  border: 1px solid gray;
+}
+
+.imagebig {
+  margin: 50px 20px 0px 20px;
+  border: 1px solid gray;
+}
+
+.units {
+  font-family: "Maven Pro", sans-serif;
+  display: inline;
+}
+
+.celcius,
+.farehneit {
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+  font-weight: bold;
 }
