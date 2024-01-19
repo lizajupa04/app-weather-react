@@ -40,24 +40,27 @@ export default function Weather(props) {
       <div className="App-contenedor">
         <div className="container">
           <div className="row">
-            <div className="row section-search">
-              <form onSubmit={handleSubmit} id="form1">
-                <input
-                  class="inputsearch"
-                  id="inputsearch"
-                  type="search"
-                  placeholder="Search your city..."
-                  onChange={handleCityChange}
+            <div className="col-8 columna1">
+              <div className="row section-search">
+                <form onSubmit={handleSubmit} id="form1">
+                  <input
+                    class="inputsearch"
+                    id="inputsearch"
+                    type="search"
+                    placeholder="Search your city..."
+                    onChange={handleCityChange}
+                  />
+                  <input class="inputbutton" type="submit" value="🔎" />
+                </form>
+              </div>
+              <div className="row section-complement">
+                <Weatherinforma
+                  data={weatherData}
+                  alt="{props.data.description}"
                 />
-                <input class="inputbutton" type="submit" value="🔎" />
-              </form>
+              </div>
             </div>
-            <div className="row section-complement">
-              <Weatherinforma
-                data={weatherData}
-                alt="{props.data.description}"
-              />
-            </div>
+            <div className="col-4 columna2"></div>
           </div>
         </div>
       </div>

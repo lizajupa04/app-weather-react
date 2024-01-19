@@ -7,11 +7,6 @@ body {
   margin-top: 10px;
 }
 
-.section-Temp {
-  margin-top: 10px;
-  border: 1px solid gray;
-}
-
 /* ____________SECTION SEARCH__________________________ */
 /*_____________________________________________________*/
 
@@ -21,11 +16,15 @@ body {
   height: 460px;
   padding: 20px;
   border-radius: 20px;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-left: 320px;
   display: block;
   border: 1px white solid;
   box-shadow: 10px 10px 10px rgba(121, 121, 121, 0.281);
+}
+
+.section-search {
+  margin-top: 10px;
 }
 
 .inputsearch {
@@ -41,6 +40,7 @@ body {
   box-shadow: 1px 3px 3px rgba(110, 110, 110, 0.219);
   outline: none;
   font-size: 15px;
+  margin-left: 20px;
 }
 
 .inputbutton {
@@ -52,7 +52,7 @@ body {
   border-left: 2px solid rgba(255, 255, 255, 0.521);
   border-right: none;
   border-bottom: none;
-  padding: 6px;
+  padding: 5px;
   margin-left: 5px;
   box-shadow: 1px 3px 1px rgba(124, 124, 124, 0.267);
   outline: none;
@@ -68,10 +68,6 @@ body {
   margin-left: 20px;
 }
 
-.columna1 {
-  border: 1px solid gray;
-}
-
 /* ____________SECTION CITY____________________________ */
 /*_____________________________________________________*/
 .tit-city {
@@ -80,11 +76,23 @@ body {
   font-size: 48px;
   font-weight: bold;
   margin-top: 20px;
+  margin-left: 20px;
   padding: none;
   display: flex;
   flex: start;
   border: none;
 }
+
+.section-humiditywind {
+  margin-left: 20px;
+  margin-right: 60px;
+  /*border: 1px solid gray;*/
+}
+
+.humedad {
+  margin-top: 5px;
+}
+
 .clima2,
 .clima3 {
   font-size: 12px;
@@ -105,26 +113,33 @@ body {
 /* ____________SECTION TEMP____________________________ */
 /*_____________________________________________________*/
 
-.numero-temp {
-  background: none;
-  color: rgb(66, 66, 66);
-  font-size: 120px;
-  font-weight: bold;
-  border: 1px solid gray;
-}
-.imagebig {
-  width: 100px;
-}
-.units {
-  font-family: "Maven Pro", sans-serif;
-  display: inline;
+.section-temp {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  /*border: 1px solid gray;*/
 }
 
-.celcius,
-.farehneit {
+.temperature {
+  background: none;
+  color: rgb(66, 66, 66);
+  font-size: 110px;
+  font-weight: bold;
+  margin-left: -20px;
+  /*border: 1px solid gray;*/
+}
+
+.units {
+  margin-top: 100px;
+  margin-left: -270px;
+  /*border: 1px solid gray;*/
+}
+
+.celsius,
+.fahrenheit {
   text-decoration: none;
   color: rgb(66, 66, 66);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 
