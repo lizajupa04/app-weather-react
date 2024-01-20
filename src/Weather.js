@@ -23,7 +23,7 @@ export default function Weather(props) {
     });
   }
   function search() {
-    const apiKey = "60ebef00aea70bb958b63d30fdbe5fcb";
+    const apiKey = "842b36d55cb28eba74a018029d56b04c";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -75,17 +75,23 @@ export default function Weather(props) {
             <a
               href="https://www.linkedin.com/in/liza-palomino-698a48237/"
               target="_blank"
+              rel="noreferrer"
             >
               Liza Palomino
             </a>{" "}
             and is{" "}
-            <a href="https://github.com/lizajupa04" target="_blank">
+            <a
+              href="https://github.com/lizajupa04"
+              target="_blank"
+              rel="noreferrer"
+            >
               open-sourced on GitHub
             </a>{" "}
             and{" "}
             <a
               href="https://github.com/lizajupa04/app-weather-react"
               target="_blank"
+              rel="noreferrer"
             >
               hosted on Netlify
             </a>
