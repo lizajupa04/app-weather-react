@@ -35,35 +35,6 @@ export default function Weatherinforma(props) {
           <WeatherTemperature celsius={props.data.temperature} />
         </div>
       </div>
-
-      <div className="section-buttonscities">
-        <form action="#" class="form2">
-          <input
-            class="buttonbogota"
-            id="buttonbogota"
-            type="submit"
-            value="  Bogotá  "
-          />
-          <input
-            class="buttonparis"
-            id="buttonparis"
-            type="submit"
-            value="    París    "
-          />
-          <input
-            class="buttonnewyork"
-            id="buttonnewyork"
-            type="submit"
-            value="New York"
-          />
-          <input
-            class="buttoncurrent"
-            id="buttoncurrent"
-            type="submit"
-            value="Current"
-          />
-        </form>
-      </div>
     </div>
   );
 }

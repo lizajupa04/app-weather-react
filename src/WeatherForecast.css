@@ -1,0 +1,43 @@
+.WeatherForecast {
+  background: rgba(224, 224, 224, 0.233);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 2px solid rgba(255, 255, 255, 0.521);
+  border-left: 2px solid rgba(255, 255, 255, 0.521);
+  border-bottom: none;
+  border-right: none;
+  box-shadow: 3px 7px 6px rgba(124, 124, 124, 0.267);
+  margin-left: -60px;
+  margin-top: 10px;
+  width: 230px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: rgb(66, 66, 66);
+  font-weight: bold;
+}
+
+.iconforecast {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.section-temp-day {
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+.day {
+  font-size: 16px;
+}
+
+.temp-min-max {
+  display: inline-block;
+  position: relative;
+  top: -12px;
+}
+
+.WeatherForecast-temp-max,
+.WeatherForecast-temp-min {
+  font-weight: lighter;
+}
