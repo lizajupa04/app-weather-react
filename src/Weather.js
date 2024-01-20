@@ -39,35 +39,59 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="App-contenedor">
-        <div className="container">
-          <div className="row">
-            <div className="col-8 columna1">
-              <div className="row section-search">
-                <form onSubmit={handleSubmit} id="form1">
-                  <input
-                    class="inputsearch"
-                    id="inputsearch"
-                    type="search"
-                    placeholder="Search your city..."
-                    onChange={handleCityChange}
+      <>
+        <div className="App-contenedor">
+          <div className="container">
+            <div className="row">
+              <div className="col-8 columna1">
+                <div className="row section-search">
+                  <form onSubmit={handleSubmit} id="form1">
+                    <input
+                      class="inputsearch"
+                      id="inputsearch"
+                      type="search"
+                      placeholder="Search your city..."
+                      onChange={handleCityChange}
+                    />
+                    <input class="inputbutton" type="submit" value="🔎" />
+                  </form>
+                </div>
+                <div className="row section-complement">
+                  <Weatherinforma
+                    data={weatherData}
+                    alt="{props.data.description}"
                   />
-                  <input class="inputbutton" type="submit" value="🔎" />
-                </form>
+                </div>
               </div>
-              <div className="row section-complement">
-                <Weatherinforma
-                  data={weatherData}
-                  alt="{props.data.description}"
-                />
+              <div className="col-4 columna2">
+                <WeatherForecast coordinates={weatherData.coordinates} />
               </div>
-            </div>
-            <div className="col-4 columna2">
-              <WeatherForecast coordinates={weatherData.coordinates} />
             </div>
           </div>
         </div>
-      </div>
+        <div className="footer">
+          <footer>
+            This project was coded by{" "}
+            <a
+              href="https://www.linkedin.com/in/liza-palomino-698a48237/"
+              target="_blank"
+            >
+              Liza Palomino
+            </a>{" "}
+            and is{" "}
+            <a href="https://github.com/lizajupa04" target="_blank">
+              open-sourced on GitHub
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://github.com/lizajupa04/app-weather-react"
+              target="_blank"
+            >
+              hosted on Netlify
+            </a>
+          </footer>
+        </div>{" "}
+      </>
     );
   } else {
     search();
